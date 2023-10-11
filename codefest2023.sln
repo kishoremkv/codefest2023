@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{0E8C84C5-BBD2-454C-A941-4C5707ED52DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{DF1E12D0-F6FB-4772-A040-14C0FD9FED69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listeningear", "Listeningear\Listeningear.csproj", "{9D696060-50AA-4F8A-AEE1-8CE2135206ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E8C84C5-BBD2-454C-A941-4C5707ED52DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8C84C5-BBD2-454C-A941-4C5707ED52DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8C84C5-BBD2-454C-A941-4C5707ED52DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8C84C5-BBD2-454C-A941-4C5707ED52DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1E12D0-F6FB-4772-A040-14C0FD9FED69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1E12D0-F6FB-4772-A040-14C0FD9FED69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1E12D0-F6FB-4772-A040-14C0FD9FED69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1E12D0-F6FB-4772-A040-14C0FD9FED69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D696060-50AA-4F8A-AEE1-8CE2135206ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D696060-50AA-4F8A-AEE1-8CE2135206ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D696060-50AA-4F8A-AEE1-8CE2135206ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D696060-50AA-4F8A-AEE1-8CE2135206ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
