@@ -16,8 +16,8 @@ namespace Infrastructure.Data
         }
 
         public DbSet<UserMaster> UserMaster {set; get;}
-        // public DbSet<ProductType> ProductTypes { get; set; }
-        // public DbSet<ProductBrand> ProductBrands { get; set; }
+        public DbSet<AddressMaster> AddressMaster {set; get;}
+        public DbSet<AppointmentMaster> AppointmentMaster {set; get;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

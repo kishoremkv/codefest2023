@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Interfaces;
 using Infrastructure.Data;
+using Listeningear.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,7 +31,7 @@ namespace Listeningear
 
             services.AddControllers();
             ///services.AddAutoMapper();
-            
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
@@ -39,6 +40,8 @@ namespace Listeningear
             
             services.AddDbContext<DBContext>(x => x.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
             services.AddScoped<IUserMasterRepository, UserMasterRepository>();
+            services.AddScoped<IAddressMasterRepository, AddressMasterRepository>();
+            services.AddScoped<IAppointmentMasterRepository, AppointmentMasterRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         }
 

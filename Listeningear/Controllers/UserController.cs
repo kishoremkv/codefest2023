@@ -14,14 +14,13 @@ namespace Listeningear.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private DBContext _dbContext;
 
         private readonly IUserMasterRepository _userRepo;
         private readonly IMapper _mapper;
 
-        public UserController(IUserMasterRepository userRepo)
+        public UserController(IUserMasterRepository userRepo, IMapper mapper)
         {
-//            _mapper = mapper;
+            _mapper = mapper;
             _userRepo = userRepo;
         }
 
