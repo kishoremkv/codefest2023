@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Core.Models
 {
-    public class UserMaster
+    [Table("user_master")]
+    public class UserMaster : BaseEntity
     {
         [Key]
         [Column("id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [Column("first_name")]
         public string FirstName { get; set; }
         [Column("user_type")]
@@ -24,7 +25,7 @@ namespace Core.Models
         public string LastName { get; set; }
         [Column("mobile")]
         public int Mobile { get; set; } 
-        public DateTime DOB { get; set; }
+        public DateTime? DOB { get; set; }
         [Column("email")]
         public string Email { get; set; }
     }

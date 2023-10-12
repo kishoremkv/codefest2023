@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Listeningear.Controllers
@@ -10,6 +11,9 @@ namespace Listeningear.Controllers
     [Route("api/[controller]")]
     public class AddressController : ControllerBase
     {
-        
+        public AddressController(DBContext dBContext)
+        {
+            
+        }
     }
 }
